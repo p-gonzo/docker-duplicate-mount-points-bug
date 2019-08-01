@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  node_app:
+    build: ./web/nodeApp
+    volumes:
+      - ./:/usr/src/app
+      - /usr/src/app/web/static
+      - ./web/assets_one:/usr/src/app/web/static
+      - /usr/src/app/web/nodeApp/node_modules
+    ports:
+      - "3000:3000"
+    command: "npm run serve"
