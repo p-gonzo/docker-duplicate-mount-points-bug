@@ -2,7 +2,7 @@
 
 ## Background:
 
-- We are developing a white-labeled application that uses Docker Compose two switch between static assets.
+- We are developing a white-labeled application that uses Docker Compose to switch between static assets.
 - We have a separate .yml file per-application to do the asset linking
 
 ## Usage (On Docker 2.0.0.3 on OSX):
